@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+body {
+    background: linear-gradient(180deg, #010208 16.39%, #010206 20.51%, #040008 24.79%, #010101 30.46%, #010101 34.11%, #010101 36.21%, #010101 100%);
+    color: white;
+    font-family: 'Poppins', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Orbitron';
+}
+
+h2 span {
+    background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+p,
+a,
+button {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+
+button,
+p {
+    font-size: 1.1rem;
+    color: inherit;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    transition: all .4s ease;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.3rem clamp(1rem, 8.3vw, 20rem);
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav a {
+    transition: all .5s ease;
+    margin: .5rem 0;
+}
+
+nav h3 {
+    font-size: 1.4rem;
+    font-family: 'Orbitron';
+}
+
+nav ul a:hover {
+    background: linear-gradient(to right, #f32170, #ff6b08);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.linear-bg {
+    background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.hero .get-started {
+    background: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
+    border-radius: 5px;
+    padding: .8rem 1.7rem;
+    border: none;
+    margin-bottom: 1rem;
+    margin-right: .5rem;
+}
+
+.hero .explore {
+    background: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
+    border-radius: 5px;
+    padding: 1.5px;
+}
+
+.hero .explore span {
+    display: inline-block;
+    padding: calc(.8rem - 1.5px) calc(1.45rem - 1.5px);
+    background: #010208;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem clamp(1rem, 8.3vw, 20rem);
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.hero>div,
+.hero figure {
+    flex-grow: 1;
+    flex-basis: 350px;
+}
+
+.hero>div {
+    margin: 3rem 0 0 0;
+}
+
+.hero h1 {
+    font-family: 'Orbitron';
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.hero h1 span {
+    background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 3.3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    margin: 1.8rem 0;
+}
+
+.hero .count {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 21rem;
+    gap: 2rem;
+    margin: 1.7rem 0 0 0;
+}
+
+.hero .count h3 {
+    font-size: 1.5rem;
+    font-family: 'Orbitron';
+    font-weight: 500;
+    line-height: 35px;
+    width: fit-content;
+}
+
+.hero .count span {
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+    padding: 2rem clamp(1rem, 8.3vw, 20rem);
+}
+
+.about>div,
+.about figure {
+    flex-grow: 1;
+    flex-basis: 350px;
+}
+
+.about p {
+    margin: 1.5rem 0;
+}
+
+.about button {
+    background: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
+    border-radius: 5px;
+    padding: .6rem 1.5rem;
+    border: none;
+    margin: 1rem 0;
+}
+
+.meta-work {
+    padding: 4rem clamp(1rem, 8.3vw, 20rem);
+}
+
+.meta-work>h2,
+.meta-work>p {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.meta-work>p {
+    max-width: 650px;
+}
+
+.meta-work__types {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.meta-work__types>div {
+    flex-grow: 1;
+    flex-basis: 270px;
+    background: #090823;
+    padding: 1rem;
+    border-radius: 0 30px 0 30px;
+}
+
+.meta-work__types img {
+    width: 100%;
+}
+
+.meta-work__types h3 {
+    font-size: 1.23rem;
+    font-weight: 500;
+    font-family: 'Orbitron';
+    margin: 1rem 0;
+}
+
+.meta-work__types p {
+    font-size: 1rem;
+}
+
+.meta-work__types .try-now {
+    background: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    border: none;
+    margin: 1.5rem .5rem 1rem 0;
+    font-size: 1rem;
+}
+
+.meta-work__types .explore {
+    background: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
+    border-radius: 5px;
+    padding: 1.5px;
+    font-size: 1rem;
+}
+
+.meta-work__types .explore span {
+    display: inline-block;
+    padding: calc(.5rem - 1.5px) calc(.8rem - 1.5px);
+    background: #090823;
+}
+
+.activity {
+    padding: 2.3rem 0 2.3rem clamp(1rem, 8.3vw, 20rem);
+}
+
+.activity h2 {
+    text-align: center;
+}
+
+.activity>p {
+    text-align: center;
+    margin: 1.2rem auto;
+    max-width: 550px;
+}
+
+.activity-types {
+    display: flex;
+    overflow-y: scroll;
+}
+
+.activity-types>div {
+    flex-shrink: 0.2;
+}
