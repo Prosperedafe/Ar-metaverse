@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Ar-Metaverse</title>
 </head>
 
@@ -16,12 +17,15 @@
             <div class="logo">
                 <h3>MetaV</h3>
             </div>
-            <ul>
+            <ul id="menu" class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Resource</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
+            <div class="hamburger" id="open">
+                <span></span><span></span><span></span>
+            </div>
         </nav>
     </header>
     <main>
@@ -110,31 +114,35 @@
             </div>
         </section>
         <section class="activity" role="region" title="Our Latest Activity">
-            <h2>Our Latest <span>Activity</span></h2>
-            <p>Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies. Venenatis cras</p>
+            <div class="activity-intro">
+                <h2>Our Latest <span>Activity</span></h2>
+                <p>Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies. Venenatis cras</p>
+            </div>
             <div class="activity-types">
                 <div>
                     <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1673480894/ar-metaverse/assets/metaverse_1_imhbks.png"
-                        alt="">
-                    <div>
+                        alt="fashion week">
+                    <div class="vid-play">
                         <h3>Metaverse Fashion Week</h3>
-                        <img src="" alt="">
+                        <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1673480914/ar-metaverse/assets/Group_48095494_eu1tbi.png"
+                            alt="play">
                     </div>
                 </div>
                 <div>
                     <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1673480895/ar-metaverse/assets/Group_48095499_tixhe7.png"
-                        alt="">
-                    <div>
+                        alt="online travel">
+                    <div class="vid-play">
                         <h3>Online Travel</h3>
-                        <img src="" alt="">
+                        <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1673480914/ar-metaverse/assets/Group_48095494_eu1tbi.png"
+                            alt="play">
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <h3>MetaV</h3>
+        <div class="meta-description">
+            <h2><span>MetaV</span></h2>
             <p>Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies lacus. Nisi porta lorem
                 mollis aliquam ut
                 porttitor</p>
@@ -155,12 +163,16 @@
             <li>Artwork</li>
             <li>Online Travel</li>
         </ul>
-        <div>
+        <div class="contact">
             <h4>Contact</h4>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1673046395/ar-metaverse/assets/LinkedIn_np2wgq.svg"
+                alt="linkedin">
+            <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1673046397/ar-metaverse/assets/Twitter_Squared_dh2ls7.svg"
+                alt="twitter">
+            <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1673046388/ar-metaverse/assets/Instagram_zlddnt.svg"
+                alt="instagram">
+            <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1673046388/ar-metaverse/assets/Facebook_v0tnke.svg"
+                alt="facebook">
             <p>2022 © MetaV.com All right reserved.</p>
         </div>
     </footer>

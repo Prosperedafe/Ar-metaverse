@@ -30,65 +30,98 @@ img {
     max-width: 100%;
 }
 
-p,
-a,
-button {
-    font-family: 'poppins', Arial, Helvetica, sans-serif;
-}
-
-button,
 p {
     font-size: 1.1rem;
     color: inherit;
     font-weight: 400;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: inherit;
+    font-weight: 400;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
 a {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: inherit;
     font-size: 1rem;
-    transition: all .4s ease;
+    transition: .4s ease;
 }
 
 li {
     list-style: none;
 }
 
+header {
+    position: relative;
+    padding-bottom: 4rem;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 2.3rem clamp(1rem, 8.3vw, 20rem);
+    padding: 2.5rem clamp(1rem, 7vw, 20rem);
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #010208;
 }
 
 nav ul {
     display: flex;
     gap: 2.5rem;
+    transition: all .3s ease;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
 }
 
 nav a {
-    transition: all .5s ease;
     margin: .5rem 0;
 }
 
-nav h3 {
-    font-size: 1.4rem;
-    font-family: 'Orbitron';
-}
-
-nav ul a:hover {
-    background: linear-gradient(to right, #f32170, #ff6b08);
+nav a:hover {
+    background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
-.linear-bg {
+nav h3 {
+    font-size: 1.6rem;
+    font-family: 'Orbitron';
     background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
 }
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem clamp(1rem, 7vw, 20rem);
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
 
 .hero .get-started {
     background: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
@@ -109,14 +142,6 @@ nav ul a:hover {
     display: inline-block;
     padding: calc(.8rem - 1.5px) calc(1.45rem - 1.5px);
     background: #010208;
-}
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5rem clamp(1rem, 8.3vw, 20rem);
-    flex-wrap: wrap;
-    gap: 4rem;
 }
 
 .hero>div,
@@ -178,7 +203,7 @@ nav ul a:hover {
     flex-wrap: wrap;
     align-items: center;
     gap: 6rem;
-    padding: 2rem clamp(1rem, 8.3vw, 20rem);
+    padding: 2rem clamp(1rem, 7vw, 20rem);
 }
 
 .about>div,
@@ -200,7 +225,7 @@ nav ul a:hover {
 }
 
 .meta-work {
-    padding: 4rem clamp(1rem, 8.3vw, 20rem);
+    padding: 3rem clamp(1rem, 7vw, 20rem);
 }
 
 .meta-work>h2,
@@ -271,11 +296,16 @@ nav ul a:hover {
     padding: 2.3rem 0 2.3rem clamp(1rem, 8.3vw, 20rem);
 }
 
-.activity h2 {
+.activity-intro {
+    margin: 0 auto;
+    padding-right: clamp(1rem, 8.3vw, 20rem);
+}
+
+.activity-intro h2 {
     text-align: center;
 }
 
-.activity>p {
+.activity-intro p {
     text-align: center;
     margin: 1.2rem auto;
     max-width: 550px;
@@ -283,9 +313,155 @@ nav ul a:hover {
 
 .activity-types {
     display: flex;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    overflow-y: visible;
+    gap: 3rem;
+    margin: 3rem 0;
+    padding-right: 2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.activity-types::-webkit-scrollbar {
+    display: none;
 }
 
 .activity-types>div {
     flex-shrink: 0.2;
+    flex-grow: 1;
+    width: 120vw;
+    max-width: 900px;
+    padding: 1rem 0;
+}
+
+.activity-types .vid-play {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.activity-types .vid-play h3 {
+    font-family: 'Orbitron';
+    font-size: clamp(1rem, 5vw, 2.5rem);
+    font-weight: 500;
+    height: fit-content;
+}
+
+.activity-types .vid-play img {
+    height: 4rem;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+footer {
+    background: #090823;
+    padding: clamp(3rem, 5vw, 5rem) clamp(1rem, 7vw, 20rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+
+footer>div,
+footer ul {
+    flex-grow: 1;
+    max-width: fit-content;
+    flex-basis: 300px;
+}
+
+footer h2 {
+    font-size: 3rem;
+}
+
+footer h4 {
+    font-size: 1.3rem;
+    font-family: 'Orbitron';
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+footer li {
+    margin: .6rem 0;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+footer li:hover {
+    background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+footer .meta-description p {
+    margin: 1.5rem 0;
+    max-width: 500px;
+}
+
+footer .contact p {
+    max-width: 200px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+footer .contact img {
+    cursor: pointer;
+}
+
+@media(max-width: 620px) {
+    nav {
+        padding: 1.5rem clamp(1rem, 7vw, 20rem);
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 2rem;
+        position: absolute;
+        z-index: 1;
+        top: 90%;
+        right: 0;
+        padding: 2rem 3rem;
+        background: #010208;
+    }
+
+    .menu {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(.95);
+    }
+
+    .menu-open {
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: all;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero,
+    .about {
+        text-align: center;
+    }
+
+    .activity {
+        padding: 2.3rem clamp(1rem, 8.3vw, 20rem);
+    }
+
+    .activity-types {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .activity-types>div {
+        width: 100%;
+    }
+
+    .activity-intro {
+        padding-right: 0;
+    }
 }
