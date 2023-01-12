@@ -156,7 +156,7 @@ nav h3 {
 
 .hero h1 {
     font-family: 'Orbitron';
-    font-size: 2.8rem;
+    font-size: clamp(2rem, 7vw, 2.8rem);
     font-weight: 600;
 }
 
@@ -166,7 +166,7 @@ nav h3 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-size: 3.3rem;
+    font-size: clamp(2rem, 8vw, 3.3rem);
     font-weight: 700;
 }
 
@@ -225,7 +225,7 @@ nav h3 {
 }
 
 .meta-work {
-    padding: 3rem clamp(1rem, 7vw, 20rem);
+    padding: 2rem clamp(1rem, 7vw, 20rem);
 }
 
 .meta-work>h2,
@@ -293,7 +293,7 @@ nav h3 {
 }
 
 .activity {
-    padding: 2.3rem 0 2.3rem clamp(1rem, 8.3vw, 20rem);
+    padding: 1rem 0 2.3rem clamp(1rem, 8.3vw, 20rem);
 }
 
 .activity-intro {
@@ -449,7 +449,7 @@ footer .contact img {
     }
 
     .activity {
-        padding: 2.3rem clamp(1rem, 8.3vw, 20rem);
+        padding: 1rem clamp(1rem, 8.3vw, 20rem);
     }
 
     .activity-types {
