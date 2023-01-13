@@ -3,4 +3,3 @@ const menu = document.getElementById('menu')
 open.addEventListener('click', () => {
     menu.classList.toggle('menu-open')
 })
-console.log(menu);
