@@ -253,7 +253,7 @@ nav h3 {
     height: 100vh;
     width: 50vw;
     z-index: -1;
-    top: -30%;
+    top: -10%;
     left: -20%;
     border-radius: 50%;
 }
@@ -528,6 +528,10 @@ footer .contact img {
 }
 
 @media(max-width: 620px) {
+    header::after {
+        display: none;
+    }
+
     nav {
         padding: 1.5rem clamp(1rem, 7vw, 20rem);
     }
