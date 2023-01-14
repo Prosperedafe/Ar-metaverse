@@ -63,31 +63,6 @@ header {
     position: relative;
 }
 
-header::before {
-    content: '';
-    position: absolute;
-    background-image: radial-gradient(circle, #2B0540, transparent, transparent);
-    height: 80vh;
-    width: 80vw;
-    display: block;
-    z-index: -1;
-    transform: translate(-10%, -50%);
-    border-radius: 50%;
-}
-
-header::after {
-    content: '';
-    position: absolute;
-    background-image: radial-gradient(circle, #2B0540, transparent, transparent);
-    height: 100vh;
-    width: 50vw;
-    display: block;
-    z-index: -1;
-    top: 0%;
-    transform: translate(150%, 0%);
-    border-radius: 50%;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -247,18 +222,6 @@ nav h3 {
     position: relative;
 }
 
-.about::before {
-    content: '';
-    position: absolute;
-    background-image: radial-gradient(circle, #2B0540, transparent, transparent);
-    height: 100vh;
-    width: 60vw;
-    display: block;
-    z-index: -1;
-    transform: translate(-50%, -20%);
-    border-radius: 50%;
-}
-
 .about>div,
 .about figure {
     flex-grow: 1;
@@ -280,16 +243,6 @@ nav h3 {
 .meta-work {
     padding: 2rem clamp(1rem, 7vw, 20rem);
     position: relative;
-}
-
-.meta-work::before {
-    content: '';
-    background-image: radial-gradient(circle, #2B0540, transparent, transparent);
-    height: 150vh;
-    width: 75vw;
-    z-index: -1;
-    transform: translate(0%, -30%);
-    border-radius: 50%;
 }
 
 .meta-work>h2,
@@ -358,27 +311,6 @@ nav h3 {
 
 .activity {
     padding: 1rem 0 2.3rem clamp(1rem, 8.3vw, 20rem);
-}
-
-.activity::before {
-    content: '';
-    position: absolute;
-    background-image: radial-gradient(circle, #2B0540, transparent, transparent);
-    height: 100vh;
-    width: 75vw;
-    z-index: -1;
-    transform: translate(-60%, -20%);
-    border-radius: 50%;
-}
-
-.activity::after {
-    content: '';
-    background-image: radial-gradient(circle, #2B0540, transparent, transparent);
-    height: 150vh;
-    width: 75vw;
-    z-index: -1;
-    transform: translate(60%, -70%);
-    border-radius: 50%;
 }
 
 .activity-intro {
@@ -503,30 +435,8 @@ footer .contact img {
     cursor: pointer;
 }
 
-@media(max-width: 500px) {
-    .about::before {
-        width: 100vw;
-    }
-
-    .meta-work::before {
-        width: 150vw;
-    }
-
-    .activity::before {
-        height: 50vh;
-    }
-
-    .activity::after {
-        height: 50vh;
-        bottom: -60%;
-    }
-}
 
 @media(max-width: 620px) {
-    header::after {
-        display: none;
-    }
-
     nav {
         padding: 1.5rem clamp(1rem, 7vw, 20rem);
     }
@@ -584,19 +494,19 @@ footer .contact img {
 
     .hero .count1 {
         position: absolute;
-        top: 38%;
+        top: 30%;
         left: 2rem;
     }
 
     .hero .count2 {
         position: absolute;
-        top: 18%;
+        top: 14%;
         left: 30%;
     }
 
     .hero .count3 {
         position: absolute;
-        top: 21%;
+        top: 18%;
         right: 2rem;
     }
 
